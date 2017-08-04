@@ -20,24 +20,25 @@ AU915 allows for a total of 73 possible channels to use within the 915 MHz to 93
 
 The entire point of the task is to get the Dragino LoRaShield to operate in the specified AU915 frequency range, and specifically, sub-band 2. Therefore, it is first prudent to document the required channels and their respective properties. The table below displays the available upstream and downstream channels for AU915 sub-band 2.
 
-#   | direc| f/MHz  | BW/kHz | data rate
-8   | up   | 916.8  | 125    | DR0 - DR3
-9   | up   | 917.0  | 125    | DR0 - DR3
-10  | up   | 917.2  | 125    | DR0 - DR3
-11  | up   | 917.4  | 125    | DR0 - DR3
-12  | up   | 917.6  | 125    | DR0 - DR3
-13  | up   | 917.8  | 125    | DR0 - DR3
-14  | up   | 918.0  | 125    | DR0 - DR3
-15  | up   | 918.2  | 125    | DR0 - DR3
-65  | up   | 917.5  | 500    | DR4
-0   | down | 923.3  | 500    | DR8 - DR13
-1   | down | 923.9  | 500    | DR8 - DR13
-2   | down | 924.5  | 500    | DR8 - DR13
-3   | down | 925.1  | 500    | DR8 - DR13
-4   | down | 925.7  | 500    | DR8 - DR13
-5   | down | 926.3  | 500    | DR8 - DR13
-6   | down | 926.9  | 500    | DR8 - DR13
-7   | down | 927.5  | 500    | DR8 - DR13
+| Channel | Direction | Frequency (MHz) | Bandwidth (kHz) |  Data Rate |
+|:-------:|:---------:|:---------------:|:---------------:|:----------:|
+|    8    |     up    |      916.8      |       125       |  DR0 - DR3 |
+|    9    |     up    |      917.0      |       125       |  DR0 - DR3 |
+|    10   |     up    |      917.2      |       125       |  DR0 - DR3 |
+|    11   |     up    |      917.4      |       125       |  DR0 - DR3 |
+|    12   |     up    |      917.6      |       125       |  DR0 - DR3 |
+|    13   |     up    |      917.8      |       125       |  DR0 - DR3 |
+|    14   |     up    |      918.0      |       125       |  DR0 - DR3 |
+|    15   |     up    |      918.2      |       125       |  DR0 - DR3 |
+|    65   |     up    |      917.5      |       500       |     DR4    |
+|    0    |    down   |      923.3      |       500       | DR8 - DR13 |
+|    1    |    down   |      923.9      |       500       | DR8 - DR13 |
+|    2    |    down   |      924.5      |       500       | DR8 - DR13 |
+|    3    |    down   |      925.1      |       500       | DR8 - DR13 |
+|    4    |    down   |      925.7      |       500       | DR8 - DR13 |
+|    5    |    down   |      926.3      |       500       | DR8 - DR13 |
+|    6    |    down   |      926.9      |       500       | DR8 - DR13 |
+|    7    |    down   |      927.5      |       500       | DR8 - DR13 |
 
 ## Walkthrough
 
