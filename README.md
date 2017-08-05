@@ -48,15 +48,11 @@ This section covers a complete and thorough walkthrough for installing an AU915 
 
 The [Dragino LoRaShield](http://www.dragino.com/products/module/item/102-lora-shield.html) is an affordable Arduino shield for prototype development of LoRaWAN devices. The device is excellent for a prototype node. The version used in this project in the US900 version - however, this device is not specifically supported for the AU915 specification. A photo of the device is included below for reference. 
 
-Photo: Board
+![](resources/Lora_Shield_v1.4.jpg "Dragino LoraShield v1.4")
 
 Attaching the LoRaWAN shield to an Arduino is a very simple process. Just plug the shield into the matching pins available. Plug and play! Below is a photo of a Dragino LoRaShield attached to an Arduino.
 
-Photo: Board attached to Arduino
-
 NOTE: Make sure you have the US900 version of the Dragino LoRaShield. This information is available on the bottom of the PCB board. A box on the PCB should be ticked to illustrate the specific model, as illustrated in the photo below:
-
-Photo: PCB upside down
 
 ### Setup Arduino IDE
 
@@ -135,7 +131,7 @@ In `config.h` comment out line 8:
 In `config.h` uncomment line 9:
 
 ```
-#define CFG_us915 1
+define CFG_us915 1
 ```
 
 This change specified that we should use the US915 specification. Howevern, even though we just changed the frequency to US915 we will not use this specification... we just hijacked this definition for ease of implementation. Therefore, we need to update the ecisting US915 MHz code for the AU915 specification. In the `lorabase.h` file, change lines 117 to 126 to:
