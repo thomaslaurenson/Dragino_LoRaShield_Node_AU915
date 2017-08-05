@@ -125,13 +125,13 @@ Dragino_LoRaShield_Node_AU915\src\lmic
 In `config.h` comment out line 8:
 
 ```
-#define CFG_eu868 1
+//#define CFG_eu868 1
 ```
 
 In `config.h` uncomment line 9:
 
 ```
-define CFG_us915 1
+#define CFG_us915 1
 ```
 
 This change specified that we should use the US915 specification. Howevern, even though we just changed the frequency to US915 we will not use this specification... we just hijacked this definition for ease of implementation. Therefore, we need to update the ecisting US915 MHz code for the AU915 specification. In the `lorabase.h` file, change lines 117 to 126 to:
@@ -191,3 +191,4 @@ for (int channel=16; channel<72; ++channel) {
 1. http://www.instructables.com/id/Use-Lora-Shield-and-RPi-to-Build-a-LoRaWAN-Gateway/
 2. http://wiki.dragino.com/index.php?title=Lora_Shield
 3. https://www.thethingsnetwork.org/forum/t/ttn-australian-communities/4068/10
+4. https://www.thethingsnetwork.org/forum/t/lmic-node-dropped-packets/4400/9
